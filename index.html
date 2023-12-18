@@ -1,154 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .item{
-      padding: 20px 50px;
-      background: rgba(217, 255, 0, 0.788);
-      border-radius: 30px;
-      box-shadow: 5px 5px 15px #ff7300;
-      color: blue;
-      font-weight: bolder;
-      font-style: oblique;
-    }
-    .item:before{
-      content: "";
-      position: absolute;
-      background-image:url('https://d3.violet.vn/uploads/previews/document/1/478/30/_20.JPG.jpg');
-      width: 25px;
-      height: 25px;
-      background-size: cover;
-      border-radius: 30px;
-      margin-left: -40px;
-      top: 33px;
-    }
-    .grid-container {
-      display: Grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 10px;
-    }
-    .grid-item {
-      background-color: light green;
-      padding: 20px;
-      text-align: center;    
-}
-.container{
-    background-color: aquamarine;
-    padding: 10px;
-    margin-left: 20px;
-    margin-right: 20px;;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px #f5aee5, 10px 10px 15px #0a5cf3;
-    display: flex;
-    justify-content: center;  
-    justify-content: space-between;
-}
-.item:first-child{
-  align-self: flex-end;
-}
-.btn{
-  display: flex;  
-  justify-content: center;
-  justify-content: space-evenly;
-  background-color: #666666;
-  padding: 20px;
-  margin: 20px;
-}
-.btn button a{
-    text-decoration: none;
-}
-.form-login{
-  border: 1px solid #f5aee5;
-  width: 250px;
-  border-radius: 15px;
-  box-shadow: 0px 0px 10px 10px #f5aee5;
-}
-.login{
-  display: flex;
-  justify-content: center;
-}
-.login .form-submit{
-  width: 50%;
-  transition: all 0.5s ease;
-}
-.login input{
-  border: 1px solid #7a7a7a;
-  border-radius: 30px;
-  padding: 10px;
-  margin-top: 10px;
-}
-.login:hover .form-submit{
-  background-color: aquamarine;
-  transform: scale(1.15);
-  cursor: pointer;
-}
-.fogetpass{
-  display: flex;
-  justify-content: space-between;
-}
-.fogetpass h2{
-  font-size: 15px;
-  padding-left: 5px;
-  width: 75%;
-}
-
-.fogetpass > h3:before{
-  content: "";
-  position:absolute;
-  background-image: url('https://i.pinimg.com/222x/3a/69/ae/3a69ae3942d4a9da6c3cbc93b1c8f051.jpg');
-  background-size: cover;
-  width: 25px;
-  height: 25px;
-  border-radius: 30px;
-  top: 43%; 
-  margin-left: -40px;
-}
-.fogetpass:hover > h3:before{
-  position: absolute;
-  transform: scale(1.25);
-  cursor: pointer;
-}
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <div class="container">
-    <div class="item">Flex Item 1</div>
-    <div class="item">Flex Item 2</div>
-    <div class="item">Flex Item 3</div>
-  </div>
-  <div class="grid-container">
-    <div class="grid-item">Grid Item 1</div>
-    <div class="grid-item">Grid Item 2</div>
-    <div class="grid-item">Grid Item 3</div>
-  </div>
-  <div class="btn">
-  <button><a href="http://localhost/demoweb/", target="_blank"> click here</button></a>
-  <button>click here</button>
-  <button>click here</button>
-  </div>
-  <div class="form-login">
-    <div class="login">
-      <input type="text" class="form-input" placeholder="User Name">
+    <div class="Sidebar">
+        <div class="menu">
+            <li style="color: #fff;"><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li style="color: #fff;background-color: #5C5C5C;">News
+                <img src="./img/control.jpg" ></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+        </div>
     </div>
-    <div class="login">
-      <input type="password" class="form-input" placeholder="password">
-    </div>
-    <div class="login">
-      <input type="submit" value="submit" class="form-submit">
-    </div>
-    <div class="fogetpass">
-      <h2>FogetPassword</h2>
-      <h3></h3>
-    </div>
-  </div>
-  <script src="main.js"></script>
+    <div class="content">
+        <h1>
+            <img src=" ../img/logoNCC 1.jpg">
+        </h1>
+        <h2 class="text">
+        <p style="font-size: 18px; font-weight: 600;">Lorem ipsum dolor sit asmet?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique consequat placerat. Vestibulum auctor pellentesque sem, eu posuere erat hendrerit quis. Maecenas vel consequat turpis. Nam facilisis, ligula in mattis sodales,
+             augue justo tristique nulla, sed lacinia ante eros ut mi. Morbi vitae diam augue. Aliquam vel mauris a nibh auctor commodo. Praesent et nisi eu justo eleifend convallis. Quisque suscipit maximus vestibulum. Phasellus congue mollis orci, sit amet luctus augue tristique eu.
+         Donec vulputate odio neque, sed semper turpis pellentesque a.</p>
+         </h2>
+         <div class="column">
+            <div class="Group1">
+                <p id="heading">Lorem ipsum dolor sit amet</p>
+                <ul>
+                    <li>
+                        <img src="../img/css-icon 1.jpg">
+                    </li>
+                    <li style="margin-left: 15px; margin-right: 20px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut,
+                         posuere felis. Donec imperdiet suscipit accumsan.
+                          Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at 
+                    </li>
+                </ul>
+                <p style="margin-top: -15px;margin-right: 50px;">ullamcorper ultricies. Donec feugiat velit nulla,
+                     vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. 
+                     Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+            </div>
+            <div class="Group1">
+                <p id="heading">Lorem ipsum dolor sit amet</p>
+                <ul>
+                    <li>
+                        <img src="../img/icon 2.jpg">
+                    </li>
+                    <li style="margin-left: 15px;margin-right: 20px; ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut,
+                         posuere felis. Donec imperdiet suscipit accumsan.
+                          Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at 
+                    </li>
+                </ul>
+                <p style="margin-top: -15px; margin-right: 50px;">ullamcorper ultricies. Donec feugiat velit nulla,
+                     vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. 
+                     Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+            </div>
+            <div class="Group1">
+                <p id="heading">Lorem ipsum dolor sit amet</p>
+                <ul>
+                    <li>
+                        <img src="../img/icon 3.jpg">
+                    </li>
+                    <li style="margin-left: 15px;margin-right: 20px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut,
+                         posuere felis. Donec imperdiet suscipit accumsan.
+                          Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at 
+                    </li>
+                </ul>
+                <p style="margin-top: -15px;margin-right: 50px;">ullamcorper ultricies. Donec feugiat velit nulla,
+                     vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. 
+                     Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+            </div>
+         </div>
+         <div class="footer">
+            <p>Copyright © 2021</p>
+        </div>
+        </div>
+   
 </body>
-
 </html>
