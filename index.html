@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .item{
+      padding: 20px 50px;
+      background: rgba(217, 255, 0, 0.788);
+      border-radius: 30px;
+      box-shadow: 5px 5px 15px #ff7300;
+      color: blue;
+      font-weight: bolder;
+      font-style: oblique;
+    }
+    .item:before{
+      content: "";
+      position: absolute;
+      background-image:url('https://d3.violet.vn/uploads/previews/document/1/478/30/_20.JPG.jpg');
+      width: 25px;
+      height: 25px;
+      background-size: cover;
+      border-radius: 30px;
+      margin-left: -40px;
+      top: 33px;
+    }
+    .grid-container {
+      display: Grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+    .grid-item {
+      background-color: light green;
+      padding: 20px;
+      text-align: center;    
+}
+.container{
+    background-color: aquamarine;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #f5aee5, 10px 10px 15px #0a5cf3;
+    display: flex;
+    justify-content: center;  
+    justify-content: space-between;
+}
+.item:first-child{
+  align-self: flex-end;
+}
+.btn{
+  display: flex;  
+  justify-content: center;
+  justify-content: space-evenly;
+  background-color: #666666;
+  padding: 20px;
+  margin: 20px;
+}
+.btn button a{
+    text-decoration: none;
+}
+.form-login{
+  border: 1px solid #f5aee5;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 10px #f5aee5;
+}
+.login{
+  display: flex;
+  justify-content: center;
+}
+.login .form-submit{
+  width: 50%;
+  transition: all 0.5s ease;
+}
+.login input{
+  border: 1px solid #7a7a7a;
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.login:hover .form-submit{
+  background-color: aquamarine;
+  transform: scale(1.15);
+  cursor: pointer;
+}
+.fogetpass{
+  display: flex;
+  justify-content: space-between;
+}
+.fogetpass h2{
+  font-size: 15px;
+  padding-left: 5px;
+  width: 75%;
+}
+
+.fogetpass > h3:before{
+  content: "";
+  position:absolute;
+  background-image: url('https://i.pinimg.com/222x/3a/69/ae/3a69ae3942d4a9da6c3cbc93b1c8f051.jpg');
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  top: 43%; 
+  margin-left: -40px;
+}
+.fogetpass:hover > h3:before{
+  position: absolute;
+  transform: scale(1.25);
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Flex Item 1</div>
+    <div class="item">Flex Item 2</div>
+    <div class="item">Flex Item 3</div>
+  </div>
+  <div class="grid-container">
+    <div class="grid-item">Grid Item 1</div>
+    <div class="grid-item">Grid Item 2</div>
+    <div class="grid-item">Grid Item 3</div>
+  </div>
+  <div class="btn">
+  <button><a href="http://localhost/demoweb/", target="_blank"> click here</button></a>
+  <button>click here</button>
+  <button>click here</button>
+  </div>
+  <div class="form-login">
+    <div class="login">
+      <input type="text" class="form-input" placeholder="User Name">
+    </div>
+    <div class="login">
+      <input type="password" class="form-input" placeholder="password">
+    </div>
+    <div class="login">
+      <input type="submit" value="submit" class="form-submit">
+    </div>
+    <div class="fogetpass">
+      <h2>FogetPassword</h2>
+      <h3></h3>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
